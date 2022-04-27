@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background-image: linear-gradient(50deg,#d98e0a,#d98ed3);
+}
+
+.header,.input {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  font-size: 45px;
+  color: white;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.textType {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: none;
+  background-color: white;
+  height: 40px;
+  width: 250px;
+  font-size: 20px;
+  color: gray;
+}
+
+.textType:focus {
+  border: none;
+}
+
+.add {
+ border: none;
+ height: 40px;
+ width: 40px;
+ color: #d98ed3;
+ font-size: 30px;
+ background-color: white;
+ transition: all .4s ease;
+}
+
+.add:hover {
+  color: white;
+  background-color: #d98e0a;
+}
+
+.containerLists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+
+}
+
+.toDoDiv {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 300px;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.toDoButton {
+  border: none;
+ height: 40px;
+ width: 40px;
+ color: black;
+ font-size: 30px;
+ font-weight: bolder;
+ background-color: white;
+ transition: all .4s ease;
+}
+
+.toDoButton:hover {
+  color: white;
+  background-color: red;
+}
+
+
+.toDoButtonCheck {
+  border: none;
+ height: 40px;
+ width: 40px;
+ color: black;
+ font-size: 30px;
+ font-weight: bolder;
+ background-color: white;
+ transition: all .4s ease;
+}
+
+.toDoButtonCheck:hover {
+  color: white;
+  background-color: green;
+}
+
+.toDoLi {
+  font-size: 20px;
+  padding: 5px;
+  align-items: center;
+  display: flex;
+  text-align:justify;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  width: 210px;
+  height: 40px;
+  background-color: white;
+}
+
+.completed {
+  opacity: .4;
+}
