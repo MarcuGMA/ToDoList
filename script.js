@@ -50,3 +50,45 @@ function removeList(e) {
     parent.classList.toggle('completed');
   }
 }
+//Dropdown menu
+const dropdownButton = document.querySelector('.dropdownButton');
+const dropdownMenu = document.querySelector('.dropdownMenu');
+
+dropdownButton.addEventListener('click',openMenu)
+
+dropdownMenu.style.display = 'none';
+function openMenu ()
+{
+  if (dropdownMenu.style.display == 'none'){
+    dropdownMenu.style.display = 'block';
+  } else {
+    dropdownMenu.style.display = 'none';
+  }
+}
+
+//sort dropdown list
+const dropdownList = document.querySelector('.dropdownList');
+const filterAll = document.querySelector('.filterAll');
+const filterCompleted = document.querySelector('.filterCompleted');
+const filtrUncompleted = document.querySelector('.filterUncompleted');
+
+filterAll.addEventListener('click', filterOptionAll);
+filterCompleted.addEventListener('click', filterOptionCompleted);
+filterUncompleted.addEventListener('click', filterOptionUncompleted);
+
+// function filterAll() {
+//   toDoList.filter(function(value){
+//       if (value.classList.contains("completed")){
+//       return value;
+//      }  } else {
+//       value.style.display = "none";
+//     }
+//   })
+// }
+
+function filterOptionCompleted() {
+  console.log(1);
+
+}
+
+//FILTRAREA CU NICU TREBUIE

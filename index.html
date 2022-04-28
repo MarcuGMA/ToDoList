@@ -12,6 +12,14 @@
       <header class="header">To Do List</header>
       <form class="input" action="">
         <input type="text"  class="textType"><button class="add" type="button">+</button>
+        <div class="dropdown">
+          <button class="dropdownButton" type="button">List</button>
+          <div class="dropdownMenu">
+            <li value="all" class="dropdownList filterAll">All</li>
+            <li value="completed" class="dropdownList filterCompleted">Completed</li>
+            <li value="uncompleted" class="dropdownList filterUncompleted">Uncompleted</li>      
+          </div>
+        </div>
       </form>
       <div class="containerLists">
         <ul class="toDoList">
